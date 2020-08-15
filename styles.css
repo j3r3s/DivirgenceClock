@@ -1,0 +1,64 @@
+@font-face {
+	font-family: medium;
+	src: url(/assets/BONX-Medium.otf);
+}
+
+	@font-face {
+		font-family: silhouette;
+		src: url(/assets/BONX-Silhouette.otf);
+}
+
+body {
+	background-image: url(/assets/background.jpg);
+}
+
+.clock {
+	color: rgba(50, 50, 50, 0.35);
+	display: block;
+	margin: 20vh auto;
+	text-align: center;
+}
+
+.clock p.separator, .clock section {
+	display: inline-block;
+}
+
+.clock section div p {
+	position: absolute;
+	width: 60px;
+	text-align: center;
+	transition: 0.3s ease color, 0.3s ease;
+}
+
+.clock p.separator {
+	font-size: 60px;
+	vertical-align: top;
+	margin-top: 20px;
+}
+
+p {
+	font-family: 'silhouette', sans-serif;
+	font-size: 100px;
+	opacity: 0.2;
+	color: rgba(0, 0, 0, 0.363);
+	margin: 20px 0 0 0;
+}
+
+.clock p.separator, .clock section p.active {
+	color: #ffc342;
+	opacity: 1;
+	text-shadow: 0 0 10px #f7852d, 0 0 20px #f7852d, 0 0 30px #f7852d, 0 0 40px #f7852d, 0 0 60px #f7852d;
+	font-family: 'medium';
+}
+
+.clock section div {
+	display: inline-block;
+	width: 60px;
+	height: 120px;
+}
+
+.tens, .ones {
+	border: 0.02em solid #ffffff23;
+	border-radius: 1em 1em 0 0;
+	background-color: #f5f5f528;
+}
