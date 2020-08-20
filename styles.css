@@ -1,15 +1,15 @@
 @font-face {
 	font-family: medium;
-	src: url(/assets/BONX-Medium.otf);
+	src: url(./assets/BONX-Medium.otf);
 }
 
 	@font-face {
 		font-family: silhouette;
-		src: url(/assets/BONX-Silhouette.otf);
+		src: url(./assets/BONX-Silhouette.otf);
 }
 
 body {
-	background-image: url(/assets/background.jpg);
+	background-image: url(./assets/background.jpg);
 }
 
 .clock {
@@ -17,6 +17,11 @@ body {
 	display: block;
 	margin: 20vh auto;
 	text-align: center;
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	-ms-user-select:none; 
+	user-select:none;
+	-o-user-select:none;
 }
 
 .clock p.separator, .clock section {
